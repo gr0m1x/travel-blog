@@ -14,27 +14,16 @@ body {
 a {
   text-decoration: none;
 }
-header {
+section {
   position: relative;
   height: 100vh;
-  background-image: url("../images/header_slide1.jpg");
-  background-size: cover;
-  background-position: bottom;
-  overflow: hidden;
-  clip-path: polygon(100% 0, 100% 80%, 50% 100%, 0 80%, 0 0);
-
-  .content {
-    position: relative;
-  }
-
+  min-height: 60vw;
+  padding: 23vw 15px;
+  box-sizing: border-box;
 }
-
-section {
-  height: 100vh;
-}
-main {
-  height: 100vh;
-}
+//main {
+//  height: 100vh;
+//}
 //header::before, header::after {
 //  content: '';
 //  position: absolute;
@@ -76,30 +65,4 @@ main {
     opacity: 0.4;
     background-color: #FFB16E;
   }
-}
-
-.someSection.sec1 {
-
-  height: 100%;
-  background-image: url("../images/unsplash.jpg");
-  background-size: cover;
-  background-position: bottom;
-
-  transform: translateY(-60%);
-
-  clip-path: polygon(0 40%, 100% 0, 100% 100%, 0% 60%);
-
-}
-
-.someSection.sec2 {
-
-  height: 100%;
-  background-image: url("../images/kenny.jpg");
-  background-size: cover;
-  background-position: bottom;
-
-  transform: translateY(-100%);
-
-  clip-path: polygon(0 0, 100% 40%, 100% 100%, 0% 100%);
-
 }

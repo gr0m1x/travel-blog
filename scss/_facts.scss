@@ -1,0 +1,11 @@
+.facts {
+  min-height: 60vw;
+  margin-top: -26vw;
+
+  background-image: url("../images/unsplash.jpg");
+  background-size: cover;
+  background-position: bottom;
+
+  clip-path: polygon(0 26vw, 100% 0, 100% 100%, 0% calc(100% - 26vw));
+
+}
