@@ -1,11 +1,11 @@
 .aboutUs {
-  margin-top: -13vw;
+  margin-top: -6vw;
   background-image: url("../images/about-us-bg.jpg");
   background-size: cover;
   background-position: bottom;
   z-index: 10;
 
-  clip-path: polygon(50% 13vw, 100% 0, 100% calc(100% - 26vw), 0 100%, 0 0);
+  clip-path: polygon(50% 6vw, 100% 0, 100% calc(100% - 24vw), 0 100%, 0 0);
 
   &::before {
     content: '';
@@ -14,11 +14,11 @@
     top: 0;
     bottom: 0;
     right: 0;
+    z-index: -1;
     display: block;
     width: 100%;
     height: 100%;
 
     background-color: rgba(255,255,255,.8)
-
   }
 }

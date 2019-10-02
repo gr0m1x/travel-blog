@@ -1,3 +1,7 @@
+//libs
+
+
+//site styles
 @import "variables";
 @import "base";
 @import "header";
@@ -6,3 +10,9 @@
 @import "guides";
 @import "news";
 @import "footer";
+
+
+@import "components/buttons";
+@import "components/text";
+@import "components/navigation";
+@import "swiper";

@@ -1,11 +1,11 @@
 .guides {
   min-height: 60vw;
-  margin-top: -26vw;
+  margin-top: -24vw;
 
   background-image: url("../images/kenny.jpg");
   background-size: cover;
   background-position: bottom;
 
-  clip-path: polygon(0 0, 100% 26vw, 100% calc(100% - 26vw), 0 100%);
+  clip-path: polygon(0 0, 100% 24vw, 100% calc(100% - 24vw), 0 100%);
 
 }

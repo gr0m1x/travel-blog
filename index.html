@@ -6,27 +6,56 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+    <link rel="stylesheet" href="css/swiper.min.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
    <header>
-       <nav></nav>
-       <div class="lineOverlay content">
-           <span></span>
-           <span></span>
-           <span></span>
-           <span></span>
-           <span></span>
-       </div>
+       <nav class="siteNav">
+           <ul class="siteNav_list">
+               <li class="navList_item"><a href="">Home</a></li>
+               <li class="navList_item"><a href="">About Us</a></li>
+               <li class="navList_item"><a href="">Blog</a></li>
+               <li class="navList_item"><a href="">Guides</a></li>
+               <li class="navList_item"><a href="">Contact</a></li>
+           </ul>
+       </nav>
        <div class="content">
-            <div><span><a class="scrollBtn" href="#">Scroll ></a></span></div>
+           <a class="close_btn hamburger_btn" href="#">
+               <span class="hamburger"></span>
+           </a>
+           <h2 class="main_title">Join The Travel</h2>
+           <p class="sub_title">Not All who wander are lost</p>
+           <a class="btn join" href="">Join</a>
+           <div class="my-pagination"></div>
        </div>
+       <!-- Swiper -->
+       <div class="swiper-container">
+           <div class="swiper-wrapper">
+               <div class="swiper-slide"><img src="./images/header_slide5.jpg" alt="slide"></div>
+               <div class="swiper-slide"><img src="./images/header_slide6.jpg" alt="slide"></div>
+               <div class="swiper-slide"><img src="./images/header_slide4.jpg" alt="slide"></div>
+               <div class="swiper-slide"><img src="./images/header_slide3.jpg" alt="slide"></div>
+           </div>
+           <!-- Add Pagination -->
+
+       </div>
+      <a id="scrollBtn" class="scrollBtn" href="#">Scroll</a>
    </header>
 
-    <main>
+    <main id="main">
         <section class="aboutUs">
-            <div>
-
+            <div class="content">
+                <h2>About us</h2>
+                <div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab aperiam assumenda,
+                        aut delectus distinctio ducimus earum impedit molestias perferendis sunt temporibus
+                        ullam vitae voluptas! Esse fugiat illum nisi! Molestias, velit.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab aperiam assumenda,
+                        aut delectus distinctio ducimus earum impedit molestias perferendis sunt temporibus
+                        ullam vitae voluptas! Esse fugiat illum nisi! Molestias, velit.</p>
+                </div>
+                <a href="">More</a>
             </div>
         </section>
 
@@ -53,5 +82,9 @@
     <footer>
 
     </footer>
-    </body>
+
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+   <script src="js/swiper.min.js"></script>
+   <script src="js/script.js"></script>
+</body>
 </html>

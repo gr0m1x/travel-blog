@@ -1,14 +1,66 @@
 header {
   position: relative;
   height: 100vh;
+  padding-bottom:200px;
   background-image: url("../images/header_slide1.jpg");
   background-size: cover;
   background-position: bottom;
   overflow: hidden;
-  clip-path: polygon(100% 0, 100% calc(100% - 13vw), 50% 100%, 0 calc(100% - 13vw), 0 0);
+  clip-path: polygon(100% 0, 100% calc(100% - 6vw), 50% 100%, 0 calc(100% - 6vw), 0 0);
 
   .content {
     position: relative;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
   }
 
+  .scrollBtn {
+    position: absolute;
+    left: 50%;
+    bottom: 100px;
+    z-index: 10;
+    transform: translateY(0) translateX(-50%) rotate( -90deg);
+    color: #fff;
+    text-decoration: none;
+    font-size: 22px;
+    transition:all 200ms ease-in-out;
+    &::before {
+      content: '';
+      position: absolute;
+      left: -20px;
+      top:50%;
+      display: block;
+      width: 14px;
+      height: 14px;
+      border-width:0  0 2px 2px ;
+      border-color: #fff;
+      border-style: solid;
+      transform: translateY(-50%) rotate(45deg);
+    }
+  }
+
+  &.nav_open {
+    .siteNav {
+      display: flex;
+      visibility: visible;
+      opacity: 1;
+    }
+
+    .hamburger_btn {
+      .hamburger {
+        background-color: transparent;
+        transition: background-color 200ms ease-in-out;
+        &::before {
+          transform: translateY(0) rotate(45deg);
+        }
+        &::after {
+          transform: translateY(0) rotate(-45deg);
+        }
+      }
+    }
+
+  }
 }
