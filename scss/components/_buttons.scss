@@ -1,14 +1,14 @@
 .btn {
   padding: 8px 50px;
 
-  color: $white;
   font-size: 14px;
   text-transform: uppercase;
-  border: 2px solid #fff;
+  border-style: solid;
+  border-width: 2px;
   border-radius: 20px;
+
+  transition: all 200ms ease-in-out;
 }
-
-
 
 .hamburger_btn {
   position: absolute;
@@ -23,9 +23,6 @@
   border: 3px solid $white;
   border-radius: 50%;
   outline: none;
-  &.open {
-    background-color: red;
-  }
 }
 .hamburger {
   position: relative;

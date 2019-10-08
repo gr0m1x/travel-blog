@@ -13,11 +13,11 @@
    <header>
        <nav class="siteNav">
            <ul class="siteNav_list">
-               <li class="navList_item"><a href="">Home</a></li>
-               <li class="navList_item"><a href="">About Us</a></li>
-               <li class="navList_item"><a href="">Blog</a></li>
-               <li class="navList_item"><a href="">Guides</a></li>
-               <li class="navList_item"><a href="">Contact</a></li>
+               <li class="navList_item"><a class="navList_link" href="#/">Home</a></li>
+               <li class="navList_item"><a class="navList_link navList_link__scrolling" href="#aboutUs">About Us</a></li>
+               <li class="navList_item"><a class="navList_link navList_link__scrolling" href="#news">Blog</a></li>
+               <li class="navList_item"><a class="navList_link navList_link__scrolling" href="#guides">Guides</a></li>
+               <li class="navList_item"><a class="navList_link" href="#">Contact</a></li>
            </ul>
        </nav>
        <div class="content">
@@ -25,12 +25,12 @@
                <span class="hamburger"></span>
            </a>
            <h2 class="main_title">Join The Travel</h2>
-           <p class="sub_title">Not All who wander are lost</p>
-           <a class="btn join" href="">Join</a>
+           <p class="title_description">Not All who wander are lost</p>
+           <a class="btn join white" href="">Join</a>
            <div class="my-pagination"></div>
        </div>
        <!-- Swiper -->
-       <div class="swiper-container">
+       <div class="swiper-container swiper-header">
            <div class="swiper-wrapper">
                <div class="swiper-slide"><img src="./images/header_slide5.jpg" alt="slide"></div>
                <div class="swiper-slide"><img src="./images/header_slide6.jpg" alt="slide"></div>
@@ -38,40 +38,112 @@
                <div class="swiper-slide"><img src="./images/header_slide3.jpg" alt="slide"></div>
            </div>
            <!-- Add Pagination -->
-
        </div>
-      <a id="scrollBtn" class="scrollBtn" href="#">Scroll</a>
+      <a id="scrollBtn" class="scrollBtn" href="#aboutUs">Scroll</a>
    </header>
 
     <main id="main">
-        <section class="aboutUs">
+        <section class="aboutUs" id="aboutUs">
             <div class="content">
-                <h2>About us</h2>
-                <div>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab aperiam assumenda,
+                <h2 class="sub_title brown">
+                    About us
+                    <svg class="zigZag brown">
+                        <use xlink:href="./images/sprite.svg#zigZag"></use>
+                    </svg>
+<!--                    <span class="zigZag"><img src="./images/zigzag.svg" alt=""></span>-->
+                </h2>
+                <div class="description_wrap">
+                    <p class="text_description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab aperiam assumenda,
+                        aut delectus distinctio ducimus earum impedit molestias perferendis sunt temporibus
+                        ullam vitae voluptas! Esse fugiat illum nisi! Molestias, velit.
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab aperiam assumenda,
                         aut delectus distinctio ducimus earum impedit molestias perferendis sunt temporibus
                         ullam vitae voluptas! Esse fugiat illum nisi! Molestias, velit.</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab aperiam assumenda,
+                    <p class="text_description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab aperiam assumenda,
                         aut delectus distinctio ducimus earum impedit molestias perferendis sunt temporibus
-                        ullam vitae voluptas! Esse fugiat illum nisi! Molestias, velit.</p>
+                        ullam vitae voluptas! Esse fugiat illum nisi! Molestias, velit.
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab aperiam assumenda,
+                        aut delectus distinctio ducimus earum impedit molestias perferendis sunt temporibus
+                        ullam vitae voluptas! Esse fugiat illum nisi! Molestias, velit.
+                        </p>
                 </div>
-                <a href="">More</a>
+                <a class="btn brown" href="">More</a>
             </div>
         </section>
 
-        <section class="facts">
+        <section class="facts" id="facts">
+            <div class="content">
+                <h2 class="sub_title brown">
+                    Facts
+                    <svg class="zigZag brown">
+                        <use xlink:href="./images/sprite.svg#zigZag"></use>
+                    </svg>
+                </h2>
+
+                <div class="swiper-container swiper-facts">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide facts_slide">
+                            <div class="fact">
+                                <h3>67</h3>
+                                <p>Travelers</p>
+                                <svg class="brown">
+                                    <use xlink:href="./images/sprite.svg#hiking"></use>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="swiper-slide facts_slide">
+                            <div class="fact">
+                                <h3>34</h3>
+                                <p>Countries</p>
+                                <svg class="brown">
+                                    <use xlink:href="./images/sprite.svg#country"></use>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="swiper-slide facts_slide">
+                            <div class="fact">
+                                <h3>3800</h3>
+                                <p>Kilometers</p>
+                                <svg class="brown">
+                                    <use xlink:href="./images/sprite.svg#map"></use>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="swiper-slide facts_slide">
+                            <div class="fact">
+                                <h3>79</h3>
+                                <p>Bonfires</p>
+                                <svg class="brown">
+                                    <use xlink:href="./images/sprite.svg#fire"></use>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="swiper-slide facts_slide">
+                            <div class="fact">
+                                <h3>24</h3>
+                                <p>Peaks</p>
+                                <svg class="brown">
+                                    <use xlink:href="./images/sprite.svg#mountian"></use>
+                                </svg>
+                            </div>
+                        </div>
+
+                    </div>
+                    <!-- Add Arrows -->
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="guides" id="guides">
             <div>
 
             </div>
         </section>
 
-        <section class="guides">
-            <div>
-
-            </div>
-        </section>
-
-        <section class="news">
+        <section class="news" id="news">
             <div>
 
             </div>

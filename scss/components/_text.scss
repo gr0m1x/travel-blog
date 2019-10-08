@@ -7,9 +7,31 @@
   letter-spacing: 0.03em;
 }
 
-.sub_title {
+.title_description {
   margin-bottom: 30px;
-  font-size: 20px;
+  font-size: 18px;
   text-align: center;
   color: $white;
+}
+
+.sub_title {
+  position: relative;
+  margin-bottom: 100px;
+  font-size: 36px;
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 0.03em;
+
+}
+
+.text_description {
+  margin-bottom: 30px;
+  padding: 0 50px;
+  width: 50%;
+  box-sizing: border-box;
+  font-size: 18px;
+  letter-spacing: 0.03em;
+  line-height: 1.3em;
+  //text-align: center;
+  //color: $white;
 }

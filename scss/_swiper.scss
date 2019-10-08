@@ -2,7 +2,7 @@
 // Header slider
 //===========================
 header {
-  .swiper-container {
+  .swiper-header {
     position: absolute;
     left: 0;
     right: 0;
@@ -53,8 +53,6 @@ header {
     width: 10px;
     height: 10px;
     outline: none;
-    //padding: 3px;
-
     &:not(:last-child) {
       margin-bottom: 32px !important;
       &::after {
@@ -88,3 +86,56 @@ header {
     }
   }
 }
+//===========================
+// Facts slider
+//===========================
+
+.facts {
+
+  .swiper-facts {
+    width: 100%;
+    height: auto;
+    margin-bottom: 100px;
+  }
+  .swiper-wrapper {
+    align-items: flex-start;
+  }
+  .facts_slide {
+    text-align: center;
+    font-size: 18px;
+    height: auto;
+    padding-bottom: 60px;
+    //background: #fff;
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+  }
+  .swiper-button-prev,
+  .swiper-button-next {
+    background-image: none;
+    width: 30px;
+    height: 30px;
+    border-style: solid;
+    border-color: $brown;
+    border-width: 0 3px 3px 0;
+    box-sizing: border-box;
+    outline: none;
+  }
+  .swiper-button-prev {
+    transform: rotate(135deg);
+  }
+  .swiper-button-next {
+    transform: rotate(-45deg);
+  }
+}
+

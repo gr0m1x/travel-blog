@@ -2,9 +2,6 @@ header {
   position: relative;
   height: 100vh;
   padding-bottom:200px;
-  background-image: url("../images/header_slide1.jpg");
-  background-size: cover;
-  background-position: bottom;
   overflow: hidden;
   clip-path: polygon(100% 0, 100% calc(100% - 6vw), 50% 100%, 0 calc(100% - 6vw), 0 0);
 

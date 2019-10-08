@@ -1,11 +1,11 @@
 .news {
-  margin-top: -24vw;
+  margin-top: -20vw;
   background-image: url("../images/about-us-bg.jpg");
   background-size: cover;
   background-position: bottom;
   z-index: 10;
 
-  clip-path: polygon(100% 0, 100% calc(100% - 6vw), 50% 100%, 0 calc(100% - 6vw), 0 24vw);
+  clip-path: polygon(100% 0, 100% calc(100% - 6vw), 50% 100%, 0 calc(100% - 6vw), 0 20vw);
 
   &::before {
     content: '';

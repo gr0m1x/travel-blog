@@ -4,6 +4,10 @@
 //site styles
 @import "variables";
 @import "base";
+@import "components/buttons";
+@import "components/text";
+@import "components/template";
+@import "components/navigation";
 @import "header";
 @import "about-us";
 @import "facts";
@@ -11,8 +15,4 @@
 @import "news";
 @import "footer";
 
-
-@import "components/buttons";
-@import "components/text";
-@import "components/navigation";
 @import "swiper";
