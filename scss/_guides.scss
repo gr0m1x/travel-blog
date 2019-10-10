@@ -1,5 +1,4 @@
 .guides {
-  min-height: 60vw;
   margin-top: -20vw;
 
   background-image: url("../images/kenny.jpg");
@@ -8,4 +7,120 @@
 
   clip-path: polygon(0 0, 100% 20vw, 100% calc(100% - 20vw), 0 100%);
 
+  .swiper-guides {
+    margin-bottom: 80px;
+
+    .add-btn {
+      position: absolute;
+      top: 0;
+      left: 50%;
+      transform: translate(-50%, -50%) scale(0) rotate(-45deg);
+      transition: all 400ms ease-in-out;
+      z-index: 10;
+    }
+    .guides_photo-wrap {
+      width: 90%;
+
+      transform: rotate(45deg);
+    }
+    .guides_photo {
+      position: relative;
+      width: 100%;
+      margin-bottom: 20px;
+      border-radius: 50%;
+      overflow: hidden;
+      object-fit: cover;
+      transform: rotate(-45deg);
+      img {
+        position: absolute;
+        left:0;
+        right: 0;
+        bottom: 0;
+        top: 0;
+        z-index: 5;
+      }
+      &::before {
+        content: '';
+        display: block;
+        padding-top: 100%;
+      }
+    }
+    .guides_name,.guides_social {
+      transform: scale(0);
+      transition: all 400ms ease-in-out;
+    }
+    .guides_name {
+      margin-bottom: 10px;
+      color: $white;
+      text-transform: uppercase;
+      font-size: 22px;
+    }
+    .guides_social {
+      display: inline-flex;
+      padding: 0;
+      margin: 0;
+      list-style: none;
+      .social_link {
+        background-color: $white;
+        border-radius: 50%;
+        padding: 8px;
+        font-size: 0;
+        line-height: 0;
+        transition: all 200ms ease-in-out;
+        &:hover {
+          background-color: $brown;
+        }
+        svg {
+          width: 12px;
+          height: 12px;
+          fill: #252525;
+        }
+      }
+      .social_link:not(:last-child) {
+        margin-right: 20px;
+      }
+    }
+    .swiper-slide.swiper-slide-active,.swiper-slide-duplicate-active {
+      .guides_name,.guides_social {
+        transform: scale(1);
+      }
+      .add-btn {
+        transform:  translate(-50%, -50%) scale(1) rotate(-45deg);
+      }
+      .zigZag {
+        display: none;
+      }
+    }
+
+    .swiper-button-next,
+    .swiper-button-prev{
+      margin-top: -55px;
+    }
+    .swiper-button-next {
+      left: auto;
+      right: 29%;
+    }
+    .swiper-button-prev {
+      left: 29%;
+      right: auto;
+    }
+
+    .swiper-slide-next .zigZag,
+    .swiper-slide-prev .zigZag{
+        width: 60px;
+        right: auto;
+        z-index: 100;
+        transform:translate(-50%, -50%) rotate(-45deg);
+    }
+
+    .swiper-slide-next .zigZag {
+      left: 50%;
+      top: 0;
+    }
+
+    .swiper-slide-prev .zigZag {
+      top: 50%;
+      left: 0;
+    }
+  }
 }

@@ -13,7 +13,15 @@ header {
     align-items: center;
     justify-content: center;
   }
-
+  .siteLogo_link {
+    position: absolute;
+    left: 20px;
+    top: 20px;
+    img {
+      width: 60px;
+      height: auto;
+    }
+  }
   .scrollBtn {
     position: absolute;
     left: 50%;

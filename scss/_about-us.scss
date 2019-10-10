@@ -4,7 +4,7 @@
   background-image: url("../images/about-us-bg.jpg");
   background-size: cover;
   background-position: bottom;
-  background-attachment: fixed;
+  //background-attachment: fixed;
   z-index: 10;
 
   clip-path: polygon(50% 6vw, 100% 0, 100% calc(100% - 20vw), 0 100%, 0 0);

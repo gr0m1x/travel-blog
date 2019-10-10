@@ -12,9 +12,22 @@ $(document).ready(function () {
             // dynamicBullets: true,
             clickable: true,
         },
+        simulateTouch: false, // Отключение свайпа при прмощи мыши
     }),
-        swiperFatcs = new Swiper('.swiper-facts', {
+    swiperFatcs = new Swiper('.swiper-facts', {
         slidesPerView: 3,
+        loop: true,
+        // centeredSlides: true, // Центер Мод
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+    }),
+    swiperGuides = new Swiper('.swiper-guides', {
+        // effect: 'coverflow',
+        slidesPerView: 3,
+        loop: true, // Бесконечный слайдер
+        centeredSlides: true, // Центер Мод
         navigation: {
             nextEl: '.swiper-button-next',
             prevEl: '.swiper-button-prev',

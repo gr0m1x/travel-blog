@@ -20,14 +20,15 @@
 .siteNav_list {
   display: inline-flex;
   flex-direction: column;
-  list-style: none;
   padding: 0;
+  list-style: none;
 }
 
 .navList_item {
+  position: relative;
+  margin-bottom: 20px;
   text-align: center;
   text-transform: uppercase;
-  margin-bottom: 20px;
 
   a {
     color: $white;
@@ -37,6 +38,6 @@
     transition:all 200ms ease-in-out;
   }
   &:hover a{
-    color: coral;
+    color: $brown;
   }
 }

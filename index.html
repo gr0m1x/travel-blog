@@ -6,26 +6,35 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
-    <link rel="stylesheet" href="css/swiper.min.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="./images/favicon.ico" type="image/icon">
+    <link rel="stylesheet" href="./css/swiper.min.css">
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
    <header>
        <nav class="siteNav">
            <ul class="siteNav_list">
-               <li class="navList_item"><a class="navList_link" href="#/">Home</a></li>
+               <li class="navList_item"><a class="navList_link" href="#">Home</a></li>
                <li class="navList_item"><a class="navList_link navList_link__scrolling" href="#aboutUs">About Us</a></li>
                <li class="navList_item"><a class="navList_link navList_link__scrolling" href="#news">Blog</a></li>
                <li class="navList_item"><a class="navList_link navList_link__scrolling" href="#guides">Guides</a></li>
                <li class="navList_item"><a class="navList_link" href="#">Contact</a></li>
+               <li class="navList_item">
+                    <svg class="zigZag white">
+                        <use xlink:href="./images/sprite.svg#zigZag"></use>
+                    </svg>
+               </li>
            </ul>
        </nav>
        <div class="content">
+           <a class="siteLogo_link" href="">
+               <img src="images/site_logo.png" alt="">
+           </a>
            <a class="close_btn hamburger_btn" href="#">
                <span class="hamburger"></span>
            </a>
            <h2 class="main_title">Join The Travel</h2>
-           <p class="title_description">Not All who wander are lost</p>
+           <p class="title_description">Not all who wander are lost</p>
            <a class="btn join white" href="">Join</a>
            <div class="my-pagination"></div>
        </div>
@@ -73,6 +82,7 @@
 
         <section class="facts" id="facts">
             <div class="content">
+
                 <h2 class="sub_title brown">
                     Facts
                     <svg class="zigZag brown">
@@ -138,14 +148,157 @@
         </section>
 
         <section class="guides" id="guides">
-            <div>
+            <div class="content">
+                <h2 class="sub_title white">
+                    Guides
+                    <svg class="zigZag white">
+                        <use xlink:href="./images/sprite.svg#zigZag"></use>
+                    </svg>
+                </h2>
+                <div class="swiper-container swiper-guides">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="guides_photo-wrap">
+                                <div class="guides_photo">
+                                    <img src="./images/guid3.jpg" alt="">
+                                </div>
+                                <a class="add-btn" href="#"></a>
+                                <svg class="white zigZag">
+                                    <use xlink:href="./images/sprite.svg#zigZag"></use>
+                                </svg>
+                            </div>
+                            <p class="guides_name">Slavon</p>
+                            <div class="guides_social">
+                                <a class="social_link" href="#">
+                                    <svg>
+                                        <use xlink:href="./images/sprite.svg#facebook"></use>
+                                    </svg>
+                                </a>
+                                <a class="social_link" href="#">
+                                    <svg>
+                                        <use xlink:href="./images/sprite.svg#insta"></use>
+                                    </svg>
+                                </a>
+                                <a class="social_link" href="#">
+                                    <svg>
+                                        <use xlink:href="./images/sprite.svg#twitter"></use>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="guides_photo-wrap">
+                                <div class="guides_photo">
+                                    <img src="./images/guid1.jpg" alt="">
+                                </div>
+                                <a class="add-btn" href="#"></a>
+                                <svg class="white zigZag">
+                                    <use xlink:href="./images/sprite.svg#zigZag"></use>
+                                </svg>
+                            </div>
+                            <p class="guides_name">Alex</p>
+                            <div class="guides_social">
+                                <a class="social_link" href="#">
+                                    <svg>
+                                        <use xlink:href="./images/sprite.svg#facebook"></use>
+                                    </svg>
+                                </a>
+                                <a class="social_link" href="#">
+                                    <svg>
+                                        <use xlink:href="./images/sprite.svg#insta"></use>
+                                    </svg>
+                                </a>
+                                <a class="social_link" href="#">
+                                    <svg>
+                                        <use xlink:href="./images/sprite.svg#twitter"></use>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
 
+                        <div class="swiper-slide">
+                            <div class="guides_photo-wrap">
+
+                                <div class="guides_photo">
+                                    <img src="./images/guid2.jpg" alt="">
+                                </div>
+
+                                <a class="add-btn" href="#"></a>
+
+                                <svg class="white zigZag">
+                                    <use xlink:href="./images/sprite.svg#zigZag"></use>
+                                </svg>
+                            </div>
+
+                            <p class="guides_name">Eugen</p>
+
+                            <div class="guides_social">
+                                <a class="social_link" href="#">
+                                    <svg>
+                                        <use xlink:href="./images/sprite.svg#facebook"></use>
+                                    </svg>
+                                </a>
+                                <a class="social_link" href="#">
+                                    <svg>
+                                        <use xlink:href="./images/sprite.svg#insta"></use>
+                                    </svg>
+                                </a>
+                                <a class="social_link" href="#">
+                                    <svg>
+                                        <use xlink:href="./images/sprite.svg#twitter"></use>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div class="guides_photo-wrap">
+                                <div class="guides_photo">
+                                    <img src="./images/guid3.jpg" alt="">
+                                </div>
+                                <a class="add-btn" href="#"></a>
+                                <svg class="white zigZag">
+                                    <use xlink:href="./images/sprite.svg#zigZag"></use>
+                                </svg>
+                            </div>
+
+                            <p class="guides_name">Nikitos</p>
+
+                            <div class="guides_social">
+                                <a class="social_link" href="#">
+                                    <svg>
+                                        <use xlink:href="./images/sprite.svg#facebook"></use>
+                                    </svg>
+                                </a>
+                                <a class="social_link" href="#">
+                                    <svg>
+                                        <use xlink:href="./images/sprite.svg#insta"></use>
+                                    </svg>
+                                </a>
+                                <a class="social_link" href="#">
+                                    <svg>
+                                        <use xlink:href="./images/sprite.svg#twitter"></use>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Add Arrows -->
+                    <div class="swiper-button-next white"></div>
+                    <div class="swiper-button-prev white"></div>
+                </div>
+                <a class="btn white" href="#">More</a>
             </div>
         </section>
 
         <section class="news" id="news">
-            <div>
-
+            <div class="content">
+                <h2 class="sub_title brown">
+                    News
+                    <svg class="zigZag brown">
+                        <use xlink:href="./images/sprite.svg#zigZag"></use>
+                    </svg>
+                </h2>
             </div>
         </section>
 

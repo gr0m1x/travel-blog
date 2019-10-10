@@ -1,5 +1,4 @@
 .facts {
-  min-height: 60vw;
   margin-top: -20vw;
 
   background-image: url("../images/facts_bg.jpg");
@@ -7,7 +6,6 @@
   background-position: bottom;
 
   clip-path: polygon(0 20vw, 100% 0, 100% 100%, 0% calc(100% - 20vw));
-
   .fact {
     position: relative;
     display: flex;
